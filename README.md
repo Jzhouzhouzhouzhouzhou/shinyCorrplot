@@ -142,7 +142,7 @@ $ chown -R shiny /srv/shiny-server/shinyCorrplot
 $ start shiny-server  
 ```
 
-Now, the shinyPie app is available at http://IPAddressOfTheServer:3838/shinyCorrplot.  
+Now, the shinyPie app is available at http://150.109.59.144:3838/shinyCorrplot/.  
 
 
 
