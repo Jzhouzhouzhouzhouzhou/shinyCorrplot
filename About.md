@@ -15,4 +15,4 @@ shinyCorrplot:make corrplot in R with shiny.
 
 
 #	Further references
-This application was created by Haoran Li and Jie Chou. Please send bugs and feature requests to Haoran Li and Jie Chou. This application uses the shiny package from RStudio.
+This application was created by Haoran Li and Jie Chou. Please send bugs and feature requests to Haoran Li and Jie Zhou. This application uses the shiny package from RStudio.
