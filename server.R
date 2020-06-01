@@ -28,14 +28,14 @@ function(input, output){
     filename = function(){paste('corrplot.pdf')},
     content <- function(file){
       pdf(file, width = 10, height = 10)    
-      file <- read.table(input$uploadCorrplotData$datapath, header = T, row.names = 1 , sep = ",")
-      file <- as.matrix(file)
+      file1 <- read.table(input$uploadCorrplotData$datapath, header = T, row.names = 1 , sep = ",")
+      file1 <- as.matrix(file1)
       colors <- brewer.pal(11, input$var4)
       if (input$var5 == "T") {
-        corrplot(file, method = input$var1, type = input$var2, order =input$var3, bg ="white",
+        corrplot(file1, method = input$var1, type = input$var2, order =input$var3, bg ="white",
                  is.corr = switch(input$var5,T = TRUE, F = FALSE), col = colors, addrect = input$num)
       } else {
-        corrplot(file, method = input$var1, type = input$var2, order =input$var6, bg ="white",
+        corrplot(file1, method = input$var1, type = input$var2, order =input$var6, bg ="white",
                  is.corr = switch(input$var5,T = TRUE, F = FALSE), col = colors, addrect = input$num)
       }
       dev.off()},
@@ -45,14 +45,14 @@ function(input, output){
     filename = function(){paste('corrplot.svg')},
     content <- function(file){
       svg(file, width = 10, height = 10)    
-      file <- read.table(input$uploadCorrplotData$datapath, header = T, row.names = 1 , sep = ",")
-      file <- as.matrix(file)
+      file1 <- read.table(input$uploadCorrplotData$datapath, header = T, row.names = 1 , sep = ",")
+      file1 <- as.matrix(file1)
       colors <- brewer.pal(11, input$var4)
       if (input$var5 == "T") {
-        corrplot(file, method = input$var1, type = input$var2, order =input$var3, bg ="white",
+        corrplot(file1, method = input$var1, type = input$var2, order =input$var3, bg ="white",
                  is.corr = switch(input$var5,T = TRUE, F = FALSE), col = colors, addrect = input$num)
       } else {
-        corrplot(file, method = input$var1, type = input$var2, order =input$var6, bg ="white",
+        corrplot(file1, method = input$var1, type = input$var2, order =input$var6, bg ="white",
                  is.corr = switch(input$var5,T = TRUE, F = FALSE), col = colors, addrect = input$num)
       }
       dev.off()},
