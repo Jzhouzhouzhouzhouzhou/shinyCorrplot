@@ -73,7 +73,7 @@ library(shinythemes)
 
 Start an R session using RStudioun these lines:  
 ```
-shiny::runGitHub(", "")  
+shiny::runGitHub("shinyCorrplot", "Jzhouzhouzhouzhouzhou")  
 ``` 
 *****
 
